@@ -1,0 +1,70 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: deeppink;
+    border-radius: 50%;
+    position: fixed;
+    top: 200px;
+    left: 500px;
+    transition: 1s;
+}
+
+div:hover {
+    background-color: crimson;
+    width: 150px;
+    height: 150px;
+    transition: 1s;
+}
+
+a:link {
+    color: deeppink;
+}
+a:visited {
+    color: olivedrab;
+}a:active {
+    color: blue;
+}
+p {
+    background-color: crimson;
+}
+
+#test {
+    background-color: royalblue;
+}
+
+.text {
+    background-color: aqua;
+}
+
+.text {
+    font-size: 34px;
+    font-family: Snell Roundhand, cursive;
+    font-weight: 100;
+    width: 50%;
+    height: 200px;
+    border-color: deeppink;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 20px;
+}
+
+h1::first-letter {
+    color: deeppink;
+    font-size: 50px;
+    border-radius: 10px;
+    background-color: blue;
+}
+h1::after{
+    content: "Город";
+    color: deeppink;
+    font-size: 50px;
+    border-radius: 10px;
+    background-color: blue;
+}
+h1::before {
+    content: "Город";
+    color: deeppink;
+    font-size: 50px;
+    border-radius: 10px;
+    background-color: blue;
+}
