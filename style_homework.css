@@ -3,12 +3,18 @@
     height: 700px;
     background-color: #DAA520;
     border-radius: 40px;
+    margin: 10px; /* Отступы между карточками */
     transition: 1s;
 }
 .card:hover {
     background-color: #FFD700; /* Изменяем цвет фона */
     transform: scale(1.05); /* Увеличиваем размер карточки при наведении */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Добавляем тень */
+}
+.card-container {
+    display: flex; /* Включаем Flexbox */
+    justify-content: space-around; /* Равномерно распределяем карточки по горизонтали */
+    flex-wrap: wrap; /* Позволяет карточкам переноситься на следующую строку, если не хватает места */
 }
 
 .photo {
@@ -24,12 +30,5 @@ img {
     height: auto; /* Сохраняет пропорции изображения */
     border-radius: 20px;
     object-fit: cover; /* Обрезает изображение, сохраняя пропорции */
-
-card:hover {
-    background-color: #0080ff;
-    width: 400px;
-    height: 700px;
-    border-radius: 40px;
-    # добавляем свойство для плавности:
-    transition: 1s;
 }
+
